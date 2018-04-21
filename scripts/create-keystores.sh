@@ -1,18 +1,19 @@
 #!/bin/sh
 
 PASS=password
+KEYSIZE=4096
 
 # Creating a client certificate for mutual authentication
 # https://docs.oracle.com/cd/E19575-01/819-3669/bnbyi/index.html
 
 # Create client keystore and keys
-keytool -genkey -alias sslclient -keystore sslclientkeys.p12 -storetype PKCS12 -storepass $PASS -keyalg RSA
+keytool -genkey -alias sslclient -keystore sslclientkeys.p12 -storetype PKCS12 -storepass $PASS -keyalg RSA -keysize $KEYSIZE
 
 # Export client certificate
 keytool -export -alias sslclient -keystore sslclientkeys.p12 -file sslclient.cer -storetype PKCS12 -storepass $PASS
 
 # Create server keystore and keys
-keytool -genkey -alias sslserver -keystore sslserverkeys.p12 -storetype PKCS12 -storepass $PASS
+keytool -genkey -alias sslserver -keystore sslserverkeys.p12 -storetype PKCS12 -storepass $PASS -keyalg RSA -keysize $KEYSIZE
 
 # Export server certificate
 keytool -export -alias sslserver -keystore sslserverkeys.p12 -file sslserver.cer -storetype PKCS12 -storepass $PASS

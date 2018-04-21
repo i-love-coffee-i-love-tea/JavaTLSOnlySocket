@@ -35,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/scripts/create-keystores.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="644">
-              <caret line="23" column="12" selection-end-line="24" />
+              <caret line="24" column="12" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -67,20 +67,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SSLClient.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SSLClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tls-client/src/main/java/org/gobuki/net/ssl/SSLClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="980">
-              <caret line="44" column="45" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+            <state relative-caret-position="281">
+              <caret line="61" selection-start-line="61" selection-end-line="74" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SSLServer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SSLServer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tls-server/src/main/java/org/gobuki/net/ssl/SSLServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="421">
+              <caret line="76" column="75" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -147,9 +147,9 @@
         <option value="$PROJECT_DIR$/tls-client/pom.xml" />
         <option value="$PROJECT_DIR$/tls-client/src/main/resources/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/scripts/create-keystores.sh" />
-        <option value="$PROJECT_DIR$/tls-client/src/main/java/org/gobuki/net/ssl/SSLClient.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/tls-client/src/main/java/org/gobuki/net/ssl/SSLClient.java" />
         <option value="$PROJECT_DIR$/tls-server/src/main/java/org/gobuki/net/ssl/SSLServer.java" />
       </list>
     </option>
@@ -179,6 +179,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -308,9 +311,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -441,12 +441,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.26049516" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32991278" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3288866" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14820804" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14928591" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -538,7 +538,7 @@
     <entry file="file://$PROJECT_DIR$/scripts/create-keystores.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
-          <caret line="23" column="12" selection-end-line="24" />
+          <caret line="24" column="12" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -587,17 +587,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tls-server/src/main/java/org/gobuki/net/ssl/SSLServer.java">
+    <entry file="file://$PROJECT_DIR$/tls-client/src/main/java/org/gobuki/net/ssl/SSLClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="281">
+          <caret line="61" selection-start-line="61" selection-end-line="74" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tls-client/src/main/java/org/gobuki/net/ssl/SSLClient.java">
+    <entry file="file://$PROJECT_DIR$/tls-server/src/main/java/org/gobuki/net/ssl/SSLServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="44" column="45" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+        <state relative-caret-position="421">
+          <caret line="76" column="75" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
         </state>
       </provider>
     </entry>

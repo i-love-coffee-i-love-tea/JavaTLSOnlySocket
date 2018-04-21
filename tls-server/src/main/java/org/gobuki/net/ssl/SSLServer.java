@@ -3,7 +3,9 @@ package org.gobuki.net.ssl;
 import java.io.*;
 import java.net.ProtocolException;
 import java.net.SocketOption;
+import java.security.cert.Certificate;
 import java.util.concurrent.TimeUnit;
+import javax.net.ssl.SSLPeerUnverifiedException;
 import javax.net.ssl.SSLServerSocket;
 import javax.net.ssl.SSLServerSocketFactory;
 import javax.net.ssl.SSLSocket;
@@ -71,6 +73,10 @@ public class SSLServer {
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 
             //dumpSupportedSocketOptions(socket); throws NPE at getChannel()
+            System.out.println("Peer principal: " + socket.getSession().getPeerPrincipal());
+            System.out.println("Socket timeout: " + socket.getSoTimeout());
+
+            printClientCertificateChain(socket);
 
             String clientInput;
             waitForClientInput: while ((clientInput = in.readLine()) != null) {
@@ -110,24 +116,20 @@ public class SSLServer {
         }
     }
 
-    	public void printCertificates(SSLSocket sslSocket) {
-		try {
-			Certificate[] serverCerts = sslSocket.getSession().getPeerCertificates();
-			System.out.println("Retreived Server's Certificate Chain");
+    public void printClientCertificateChain(SSLSocket sslSocket) {
+        try {
+            Certificate[] serverCerts = sslSocket.getSession().getPeerCertificates();
 
-			System.out.println(serverCerts.length + "Certifcates Found\n\n\n");
-			for (int i = 0; i < serverCerts.length; i++) {
-				Certificate myCert = serverCerts[i];
-				System.out.println("====Certificate:" + (i + 1) + "====");
-				System.out.println("-Public Key-\n" + myCert.getPublicKey());
-				System.out.println("-Certificate Type-\n " + myCert.getType());
-
-				System.out.println();
-			}
-		} catch (SSLPeerUnverifiedException e) {
-			error("SSLClientSocketManager::error imprimiendo certificados de servidor : " + e.toString());
-		}
-}/
+            System.out.println("Server Certificate chain contains "  + serverCerts.length + " certifcate(s)\n");
+            for (int i = 0; i < serverCerts.length; i++) {
+                System.out.println("Certificate " + (i + 1));
+                System.out.println("Public Key:\n" + serverCerts[i].getPublicKey());
+                System.out.println("Certificate Type:\n " + serverCerts[i].getType());
+            }
+        } catch (SSLPeerUnverifiedException e) {
+            System.err.println("Error while dumping certificates : " + e.toString());
+        }
+    }
 
     public static void main(String[] args) {
 
