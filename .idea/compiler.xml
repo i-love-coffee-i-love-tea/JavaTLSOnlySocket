@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tls-client" />
+        <module name="tls-server" />
+        <module name="trap-relay-client" />
+        <module name="trap-relay-client-ssl" />
+        <module name="trap-relay-daemon" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JavaTLSOnlySocket" target="1.5" />
+      <module name="tls-client" target="1.8" />
+      <module name="tls-server" target="1.8" />
+      <module name="trap-relay-client" target="1.8" />
+      <module name="trap-relay-client-ssl" target="1.8" />
+      <module name="trap-relay-daemon" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

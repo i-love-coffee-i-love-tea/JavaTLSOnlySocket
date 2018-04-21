@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaTLSOnlySocket.iml" filepath="$PROJECT_DIR$/JavaTLSOnlySocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tls-client/tls-client.iml" filepath="$PROJECT_DIR$/tls-client/tls-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tls-server/tls-server.iml" filepath="$PROJECT_DIR$/tls-server/tls-server.iml" />
+    </modules>
+  </component>
+</project>
