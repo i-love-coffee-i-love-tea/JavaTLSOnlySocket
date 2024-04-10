@@ -19,7 +19,7 @@ import javax.net.ssl.SSLSocket;
  */
 public class SSLServer {
 
-    public static final String REQUIRED_ENCRYPTION_PROTOCOL = "TLSv1.2";
+    public static final String REQUIRED_ENCRYPTION_PROTOCOL = "TLSv1.3";
 
     public enum SupportedClientCommands {
         HI, BYE;
@@ -45,7 +45,6 @@ public class SSLServer {
             System.out.println("\t" + supportedProtocol);
             if (supportedProtocol.equalsIgnoreCase(protocol)) {
                 protocolIsSupported = true;
-                break;
             }
         }
         if (protocolIsSupported) {

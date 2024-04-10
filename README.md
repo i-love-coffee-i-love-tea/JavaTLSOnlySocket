@@ -4,7 +4,7 @@
 # JavaTLSOnlySocket
 
 Example of an SSL TCP service and client with mutual SSL authentication.
-Makes sure to connect using TLSv1.2 only.
+Makes sure to connect using TLSv1.3 only.
 
 ```
  .------------------------.
