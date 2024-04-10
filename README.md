@@ -1,3 +1,5 @@
+[![Build with Java 17](https://github.com/i-love-coffee-i-love-tea/JavaTLSOnlySocket/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/i-love-coffee-i-love-tea/JavaTLSOnlySocket/actions/workflows/maven.yml)
+
 # JavaTLSOnlySocket
 
 Example of an SSL TCP service and client with mutual SSL authentication.
