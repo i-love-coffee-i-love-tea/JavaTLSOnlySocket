@@ -34,7 +34,7 @@
       <file leaf-file-name="create-keystores.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/create-keystores.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
+            <state relative-caret-position="672">
               <caret line="24" column="12" selection-end-line="25" />
             </state>
           </provider>
@@ -70,7 +70,7 @@
       <file leaf-file-name="SSLClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tls-client/src/main/java/org/gobuki/net/ssl/SSLClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
+            <state relative-caret-position="1456">
               <caret line="61" selection-start-line="61" selection-end-line="74" selection-end-column="5" />
             </state>
           </provider>
@@ -79,7 +79,7 @@
       <file leaf-file-name="SSLServer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tls-server/src/main/java/org/gobuki/net/ssl/SSLServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
+            <state relative-caret-position="91">
               <caret line="76" column="75" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
             </state>
           </provider>
@@ -179,9 +179,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -311,6 +309,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -431,7 +431,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="31" width="3773" height="2129" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -446,7 +445,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14928591" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15036379" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -537,7 +536,7 @@
     <entry file="file://$PROJECT_DIR$/trap-relay-client-ssl/src/main/java/org/gobuki/net/snmp/traprelay/TrapRelayClient.java" />
     <entry file="file://$PROJECT_DIR$/scripts/create-keystores.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
+        <state relative-caret-position="672">
           <caret line="24" column="12" selection-end-line="25" />
         </state>
       </provider>
@@ -589,14 +588,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tls-client/src/main/java/org/gobuki/net/ssl/SSLClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
+        <state relative-caret-position="1456">
           <caret line="61" selection-start-line="61" selection-end-line="74" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tls-server/src/main/java/org/gobuki/net/ssl/SSLServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
+        <state relative-caret-position="91">
           <caret line="76" column="75" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
         </state>
       </provider>

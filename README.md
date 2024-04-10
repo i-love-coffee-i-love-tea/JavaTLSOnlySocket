@@ -1,4 +1,5 @@
-[![Build with Java 17](https://github.com/i-love-coffee-i-love-tea/JavaTLSOnlySocket/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/i-love-coffee-i-love-tea/JavaTLSOnlySocket/actions/workflows/maven.yml)
+[![Build with Java 17](https://github.com/i-love-coffee-i-love-tea/JavaTLSOnlySocket/actions/workflows/java17.yml/badge.svg?branch=master)](https://github.com/i-love-coffee-i-love-tea/JavaTLSOnlySocket/actions/workflows/java17.yml)
+[![Build with Java 21](https://github.com/i-love-coffee-i-love-tea/JavaTLSOnlySocket/actions/workflows/java21.yml/badge.svg?branch=master)](https://github.com/i-love-coffee-i-love-tea/JavaTLSOnlySocket/actions/workflows/java21.yml)
 
 # JavaTLSOnlySocket
 
