@@ -117,8 +117,6 @@ Answer "yes" to make the server trust the client certificate.
 If the programs are run without arguments the server listens for client connections on localhost port 1162 by default
 and the client by default connects to the same socket.
 
-They both take a hostname or ip as first parameter and a port number as second parameter to change this behaviour. 
-
 
 ## Links
 
