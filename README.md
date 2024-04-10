@@ -31,13 +31,14 @@ The server exits after handling one connection.
 
 $ mvn package
 
-## Manage certificates 
+## Certificate Setup
 
-We will use the keytool to create SSL keys and for certificates for both server and clients.
+We will use the keytool to create SSL keys and certificates for both server and clients.
 
 The keys are wrapped in openssl compatible PKCS12 keystores.
 
-For each client trust has to be setup by exporting and importing each others certificates into their peers keystore.
+For each client trust has to be setup by exporting and importing each others certificates into their peers keystore and
+answering yes when asked if you trust the certificate.
 
 You can run the create-keystores.sh script to initialize example keystores and skip the next topics "Create the server key- and truststore" and
 "Client key- and truststore setup" for testing.  
@@ -46,13 +47,14 @@ cd scripts
 ./create-keystores.sh
 ```
 
-### Server key- and truststore setup
+### Server key- and truststore creation
 
 **Create server keystore and keys**
 ```
 keytool -genkey -alias sslserver -keystore sslserverkeys.p12 -storetype PKCS12 -storepass $PASS
 ```
-When the keytool asks for your name "What is your first and last name?", you have to enter the hostname of the server.
+When the keytool asks for your name "What is your first and last name?", you would normally enter the hostname of the server,
+but it is not checked in the example.
 You can press enter for all other questions, for testing purposes.
 
 
